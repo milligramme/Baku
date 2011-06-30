@@ -1,0 +1,30 @@
+!!! 5
+%html
+  %head
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html", :charset => 'utf-8'}
+    %title ♥ Baku
+  :css
+    body {
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+    .wrapper {
+      position: absolute;
+      top:50%;
+      margin-top: -200px;
+      left: 0;
+      width: 100%;
+    }
+    #baku {
+      display: block;
+      overflow: hidden;
+      width: 189px;
+      height: 306px;
+      margin: 0 auto;
+    }
+    
+  %body
+    .wrapper
+      #baku
+        %img{:src => "http://assets.heroku.com/blog/postgresql_addon/baku-text.png"}
+    
